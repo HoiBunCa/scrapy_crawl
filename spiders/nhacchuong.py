@@ -44,7 +44,7 @@ class NhacchuongSpider(scrapy.Spider):
             item['source_craw'] = response.url.split("//")[1].split("/")[0]
             item['num_listens'] = response.xpath('//div[@class="ringtones-count-view"]//text()')[1].get().strip()
 
-            print("AAAAAAAAAA", item)
+            # print("AAAAAAAAAA", item)
             yield item
 
 
